@@ -1,0 +1,22 @@
+{//Pour JSDoc
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc","closure"]
+    },
+    "source": {
+        "include": [ "src" ],
+        "includePattern": ".+\\.js(doc|x)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "plugins": [],
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false
+    },
+    "opts": {//npm install ink-docstrap
+        "template": "node_modules/ink-docstrap/template",//jsdoc entry-file.js -t path/to/minami
+        "encoding": "utf8",               // same as -e utf8
+        "destination": "./docs/",          // same as -d ./out/
+        "recurse": true                  // same as -r
+    }
+}
